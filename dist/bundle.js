@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=document.querySelector(".generate"),e=document.querySelectorAll(".serial-number span");t.onclick=function(){let t="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",n="";for(let o=0;o<e.length;o++){for(let e=0;e<5;e++)n+=t[Math.floor(Math.random()*t.length)];3==o?(e[o].textContent=`${n}`,n=""):(e[o].textContent=`${n}-`,n="")}}})();
